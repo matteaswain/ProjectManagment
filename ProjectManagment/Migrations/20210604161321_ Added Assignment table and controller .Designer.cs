@@ -3,14 +3,16 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ProjectManagment.Migrations
 {
     [DbContext(typeof(ProjectManagmentContext))]
-    partial class ProjectManagmentContextModelSnapshot : ModelSnapshot
+    [Migration("20210604161321_ Added Assignment table and controller ")]
+    partial class AddedAssignmenttableandcontroller
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
